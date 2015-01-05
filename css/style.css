@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: url(../images/stardust.png);
+	background-color: #1a386a;
+	color: #fff;
+	line-height: 1.5;
+}
+
+p{
+	font-family: 'Judson', serif;
+}
+
+a{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+h1,h2,h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#header {
+	width: 100%;
+}
+
+#soul {
+	text-align: center;
+}
+
+#soul img{
+	margin: 22px 0;
+	display: inline-block;
+	height: 75vh;
+}
+
+#menu{
+	font-family: 'Quando', serif;
+	font-size: 27px;
+	text-align: center;
+	background-image: linear-gradient(to bottom, rgba(60, 60, 60, 0.8) 0%, rgba(60, 60, 60, 0.3) 100%);
+	margin-bottom: 	15px;
+
+}
+
+#menu ul {
+	display: inline-block;
+}
+
+#menu ul li {
+	float: left;
+	padding: 0 20px;
+}
+
+#menu ul li a {
+	position: relative;
+	display: inline-block;
+	outline: none;
+	padding: 10px;
+	color: #8b8982;
+	transition: 0.6s;
+}
+
+#menu ul li a:hover{
+	color: #fff;
+}
+
+
+.cl-effect-4 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	transform: translateY(-6px);
+}
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+	height: 2px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.content h1{
+	font-size: 24px;
+	text-align: center;
+	padding: 10px 0;
+	color: #6c91c2;
+}
+.content p{
+	color: #c3c9e9
+}
+
+.content #artists{
+	text-align: center;
+}
+
+.content .artist {
+	display : inline-block;
+	width	: 33%;
+	background: #333;
+	margin: 5px auto;
+}
+
+.content .artist .artist-photo {
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+}
+.content .artist #hailo{
+	background-image: url(../images/hailo.jpg);
+}
+.content .artist #disordered{
+	background-image: url(../images/disordered.jpg);
+}
+.content .artist #lemodien{
+	background-image: url(../images/lemodien.jpg);
+}
+.content .artist #dextre{
+	background-image: url(../images/dextre.jpg);
+}
+.content .artist #giper{
+	background-image: url(../images/giper.jpg);
+}
+
+.effect-genre {
+	background: #2e5d5a;
+	overflow: hidden;
+}
+
+.effect-genre p {
+	padding-left: 10px;
+	width: 100%;
+	text-align: left;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0,0);
+	transform: translate3d(-40px,0,0);
+	color: #fff;
+	font-size: 22px;
+
+}
+
+.effect-genre:hover {
+	box-shadow: 0px 313px rgba(30, 30, 30, 0.7) inset;
+	transition: 0.4s;
+}
+
+.effect-genre:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.content #releases {
+	text-align: center;
+}
+
+#footer{
+	margin-top: 50px;
+	background: url(../images/footer.png);
+	background-size: cover;
+	text-align: center;
+}
+
+#footer #top-foot{
+	margin: 20px 0 0 0 ;
+	border-top: 2px solid #8b8982;
+	font-size: 15px;
+}
+
+#footer #low-foot{
+	font-size: 12px;
+}

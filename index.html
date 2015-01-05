@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html ng-app="soulAsylum">
+<head>
+	<meta charset="UTF-8">
+	<title>Soul Asylum</title>
+	<link href='http://fonts.googleapis.com/css?family=Quando&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Judson' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+	<!--Czary Mary-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script src="js/app.js"></script>
+	
+	<link rel="stylesheet" href="css/style.css">
+	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+	<script src="js/gplus-youtubeembed.js"></script>
+</head>
+<body ng-controller="mainController">
+	<div id="header">
+		<div class="container">
+			<div id="soul">
+				<img src="images/soul3.png" alt="">
+			</div>
+			<div id="menu">
+				<ul class="cl-effect-4">
+					<li><a href="#">Home</a></li>
+					<li><a href="#artists">Artists</a></li>
+					<li><a href="#releases">Releases</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content" id="main">
+		<div class="container">
+			<div ng-view>
+			
+			</div>
+		</div>
+	</div>
+			<div id="footer">
+				<div class="container">
+					<div id="top-foot">
+						<p><a href="https://soundcloud.com/soulasylumrecords">SoundCloud</a></p>
+						<p><a href="http://soulasylumrecords.bandcamp.com/">Bandcamp</a></p>
+						<p>2015</p>
+					</div>
+					<div id="low-foot">
+						<span>Available at: Beatport, iTunes, Bleep, Juno, BOOMKAT, Kompakt, Forced Exposure, Zero Inch, Rough Trade and all good music retailers.</span>
+					</div>
+				</div>
+			</div>
+	
+</body>
+
+</html>
