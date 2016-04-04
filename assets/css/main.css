@@ -1,0 +1,83 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 90px;
+}
+
+.navbar-default {
+  background: #fff;
+  border-radius: 0;
+}
+
+.navbar-brand {height: auto;}
+.navbar-right {
+  padding: 15px 0;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #000;
+  font-size: 16px;
+}
+.navbar-default .navbar-nav>li>a.active {
+  font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.projects a.img-link {
+  display: block;
+  position: relative;
+}
+
+.projects img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.projects a {
+  color: #000;
+}
+.projects a:first-child:hover > .overlay {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.form-control {border-radius: 0;}
+
+.skills i {
+  display: inline-block;
+  font-size: 60px;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  border-top: 1px solid #e7e7e7;
+}
+.footer p {
+  margin: 20px 0;
+  font-size: 12px;
+  color: #000;
+}
+
+.overlay {
+  background: transparent;
+  position: absolute;
+  left: 0;
+  right:0;
+  bottom:0;
+  top:0;
+  transition: .1s;
+}
