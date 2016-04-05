@@ -8,9 +8,13 @@ body {
   margin-bottom: 90px;
 }
 
+.first-row {
+  margin-top: 90px;
+}
+
 .navbar-default {
   background: #fff;
-  border-radius: 0;
+  border: none;
 }
 
 .navbar-brand {height: auto;}
@@ -27,6 +31,16 @@ body {
 .navbar-default .navbar-nav>li>a:hover {
   color: #000;
   text-decoration: underline;
+}
+
+.navbar-toggle {
+  border: none;
+  margin-top: 15px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+  width: 30px;
+  height: 4px;
 }
 
 .projects a.img-link {
@@ -49,13 +63,26 @@ body {
 
 .skills i {
   display: inline-block;
-  font-size: 60px;
-  padding: 10px;
+  font-size: 120px;
+  padding: 40px;
+}
+
+@media only screen and (max-width : 480px) {
+  .skills i {
+    display: inline-block;
+    font-size: 80px;
+    padding: 20px;
+  }
+  .skills .col-md-12 {text-align: center;}
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 80px;
   font-weight: bold;
+}
+
+.contact-info {
+  padding-left: 105px;
 }
 
 .footer {
